@@ -23,11 +23,13 @@
       <section class="rounded-3xl bg-white p-6 shadow-xl shadow-slate-200/80">
         <h1 class="mb-6 text-center text-3xl font-semibold text-slate-900">Join Chat</h1>
 
-        <form id="join-form" action="/chat" method="get" class="space-y-5">
+        <form id="join-form" action="/chat" method="get" class="space-y-5" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
           <label class="block text-sm font-medium text-slate-700">
             Name
             <input
+              type="text"
               name="username"
+              autocomplete="off"
               required
               maxlength="32"
               class="mt-2 w-full rounded-2xl border border-slate-300 bg-slate-50 px-4 py-3 text-base text-slate-900 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
@@ -37,7 +39,9 @@
           <label class="block text-sm font-medium text-slate-700">
             Room ID
             <input
+              type="text"
               name="room"
+              autocomplete="off"
               required
               maxlength="32"
               value=""
